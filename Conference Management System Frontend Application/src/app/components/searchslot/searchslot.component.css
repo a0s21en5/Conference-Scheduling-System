@@ -1,0 +1,138 @@
+.container{
+    margin-top:40px ;
+}/* get-rooms-by-userid.component.css */
+
+/* Container for the content */
+.content-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color:#acbdd3; /*#f8f8f8*/
+  }
+  
+  /* Style the form container */
+  .form-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form label and input */
+  .form-container label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .form-container input[type="number"] {
+    width: 150px;
+    padding: 5px;
+  }
+  
+  .form-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the table container */
+  .table-container {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  /* Style table headers */
+  th {
+    /* background-color: #f2f2f2; */
+    background: linear-gradient(90deg, #2980b9, #2c3e50);
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Style table cells */
+  td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Style the "Delete" button */
+  button.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.btn-danger:hover {
+    background-color: #c82333;
+  }
+  .btn1
+  {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+
+  }
+  .data-not-found-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+ .container-fluid{
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    /* margin-top: 25px;
+    margin-left:130px ;
+    margin-right: 130px; */
+     
+     /* background: #2980b9; */
+    
+    display: inline;
+    display: flex;
+    
+ }
+ .search__input{
+    padding: 8px;
+    outline-width: 5px;
+    outline-color: #c82333;
+    border-radius: 5px;
+ }
+ .class-form{
+  display: inline-block;
+  background-color:  #044f5c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: 200px;
+ }
+#date{
+    margin-left: 10px;
+}
+#search-btn{
+    margin-left: 15px;
+}
+.note-class{
+  display: inline-block;
+  background-color:  #044f5c;
+  
+}
+  /* .table-head{
+    
+    
+  } */

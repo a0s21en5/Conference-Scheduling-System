@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="page-wrapper">
+    <div class="notification-container">
+      <div class="notification-cancel">
+        <h2>Notifications</h2>
+        <a class="cancel-fa" href="userdashboard"><i class="fa-solid fa-xmark fa-2xl"></i></a>
+      </div>
+      
+
+      
+      <ng-container *ngIf="notifications.length > 0; else noNotifications">
+        <div *ngFor="let notification of notifications" class="notification-message card mb-3">
+          <div class="card-body">
+            <p class="card-text">
+              <strong>Booking ID:</strong> {{ notification.bookingId }} |
+              <strong>Request ID:</strong> {{ notification.requestId }} |
+              <strong>Room ID:</strong> {{ notification.roomId }} |
+              <strong>Date:</strong> {{ notification.date }} |
+              <strong>Time Slot:</strong> {{ notification.timeSlot }}
+              <span [ngClass]="{'status-pending': notification.status === 'Pending', 'status-approved': notification.status === 'Approved', 'status-cancel': notification.status === 'Cancel'}">{{ notification.status }}</span>
+            </p>
+          </div>
+        </div>
+      </ng-container>
+      <ng-template #noNotifications>
+        <p>No notifications found.</p>
+      </ng-template>
+    </div>
+  </div>

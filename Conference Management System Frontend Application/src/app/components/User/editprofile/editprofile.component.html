@@ -1,0 +1,24 @@
+
+<div class="container">
+    <h2>Edit Profile</h2>
+
+    <form >
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="user.email" readonly>
+
+        <!-- <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="user.password" required> -->
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" [(ngModel)]="user.designation" required>
+
+        <input type="submit" (click)="Editprofile()" value="Submit">
+
+        <input type="submit" value="Cancel" (click)="Cancel()">
+
+    </form>
+</div>

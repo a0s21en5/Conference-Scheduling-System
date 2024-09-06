@@ -1,0 +1,117 @@
+<app-admindashboard></app-admindashboard>
+<!-- <div class="container">
+    <table class="table table-striped">
+
+        <thead>
+    
+          <tr>
+    
+            <th>BookingId</th>
+    
+            <th>RequestId</th>
+    
+            <th>UserId</th>
+    
+            <th>RoomId</th>
+    
+            <th>Date</th>
+    
+            <th>TimeSlot</th>
+    
+            <th>Status</th> -->
+    
+            <!-- Add other table headers here -->
+    
+          <!-- </tr>
+    
+        </thead>
+    
+        <tbody>
+    
+          <tr *ngFor="let booking of bookings">
+    
+            <td>{{ booking.bookingId }}</td>
+    
+            <td>{{ booking.requestId }}</td>
+    
+            <td>{{booking.userId}}</td>
+    
+            <td>{{ booking.roomId }}</td>
+    
+            <td>{{ booking.date}}</td>
+    
+            <td>{{ booking. timeSlot }}</td>
+    
+            <td>{{ booking.status}}</td> -->
+    
+            <!-- Add other table data here -->
+    
+          <!-- </tr>
+    
+        </tbody>
+    
+      </table>
+</div> -->
+<div class="container">
+
+  <table class="table table-striped">
+
+    <thead>
+
+      <tr>
+
+        <th>BookingId</th>
+
+        <th>RequestId</th>
+
+        <th>UserId</th>
+
+        <th>RoomId</th>
+
+        <th>Date</th>
+
+        <th>TimeSlot</th>
+
+        <th>Status</th>
+
+        <!-- Add other table headers here -->
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let booking of bookings">
+
+        <td>{{ booking.bookingId }}</td>
+
+        <td>{{ booking.requestId }}</td>
+
+        <td>{{ booking.userId }}</td>
+
+        <td>{{ booking.roomId }}</td>
+
+        <td>{{ booking.date }}</td>
+
+        <td>{{ booking.timeSlot }}</td>
+
+        <td>
+
+          <button type="button" class="btn btn-primary">
+
+            {{ booking.status }}
+
+          </button>
+
+        </td>
+
+        <!-- Add other table data here -->
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

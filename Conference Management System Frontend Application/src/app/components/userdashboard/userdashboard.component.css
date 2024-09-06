@@ -1,0 +1,286 @@
+
+/* #index-banner{
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  max-width: 100%;
+}
+
+
+nav .brand-logo, nav a, nav ul a {
+  color: white;
+}
+
+
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+} */
+
+
+
+/*LOGIM.HTML*/
+/* #body_login {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+#main_login {
+flex: 1 0 auto;
+}
+
+#body_login {
+background: #fff;
+}
+
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+.box {
+    background: url(https://images.unsplash.com/photo-1596522354195-e84ae3c98731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=887&q=80);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+    margin-bottom: 150px;
+    margin-top: 100px;
+   
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+ 
+    
+} */
+
+/* h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 70px;
+
+}
+h4{
+  margin-bottom: 30px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+    cursor: pointer;
+    color: rgb(250, 250, 252);
+    background-color: blue;
+}
+#second-banner {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: auto;
+max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+#second-banner {
+  height: 300px;
+  background-position: top;
+}
+
+#second-banner h1 {
+  font-size: 24px;
+}
+}
+
+@media screen and (max-width: 480px) {
+#second-banner {
+ 
+  height: 200px;
+  background-position: center;
+}
+
+#second-banner h1 {
+  font-size: 18px;
+}
+} */
+
+
+/* @media screen and (max-width: 768px) {
+ 
+  .box {
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  h4 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+} */
+
+/* Base styles for larger screens */
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.flex-1 {
+  flex: 1;
+  margin-top: 70px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin-bottom: 70px;
+}
+
+h4 {
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #333;
+  background: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+/* Responsive styles using media queries */
+
+/* For screens smaller than 576px (typical mobile devices) */
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+}
+
+/* For screens between 576px and 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
+/* For screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+}
+
+/* For screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* For screens larger than or equal to 1200px */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+/* Additional responsive styles for specific elements */
+@media (max-width: 1025px) {
+  section.about .about-me-img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-inne-wrap {
+    flex-direction: column;
+  }
+  .about .right {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .about .right .social {
+    justify-content: center;
+  }
+  section {
+    padding: 4rem 0;
+  }
+}
+

@@ -1,0 +1,49 @@
+.cancel-fa{
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin: 20px;
+    color: white;
+    background-color: #002347; 
+}
+.card{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 40px;
+    text-align: center;
+}
+.container-div{
+    /* background: rgb(102, 175, 175); */
+    background: linear-gradient(90deg, #2980b9, #2c3e50);
+   margin-bottom: 0px;
+   height: 100%;
+}
+.head-button{
+    display: flex;
+    
+    justify-content: space-between;
+}
+#button1-head{
+    margin-left: 200px;
+}
+.notification-data-class{
+    display: flex;
+    margin-left:300px ;
+}
+.requestdata-Class{
+    display: flex;
+    margin-left:300px ;
+}
+#right-button{
+    margin-left: 200px;
+}
+#last-data-p{
+    display: flex;
+    margin-left:300px ;
+}
+#note-data{
+    margin-top: 20px;
+    margin-left: 300px;
+    display: flex;
+    font-size:x-large;
+    color: black;
+}

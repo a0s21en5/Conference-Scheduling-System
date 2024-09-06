@@ -1,0 +1,166 @@
+.custom_container {
+
+    max-width: 1300px;
+  
+    margin: 0 auto;
+
+    padding: 20px;
+    /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); */
+  
+  }
+  
+  
+  
+  .card {
+  
+    border: 1px solid #ccc;
+  
+    border-radius: 5px;
+  
+    /* padding: 20px; */
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    background-color: #fff;
+  
+  }
+  
+  
+  
+  .card-title {
+  
+    font-size: 1.2rem;
+  
+    font-weight: bold;
+  
+    margin-bottom: 10px;
+  
+  }
+  
+  
+  
+  .table {
+  
+    width: 100%;
+  
+    border-collapse: collapse;
+  
+  }
+  
+  
+  
+  .table th,
+  
+  .table td {
+  
+    padding: 8px 12px;
+  
+    border: 1px solid #ccc;
+  
+  }
+  
+  
+  
+  .table th {
+  
+    background-color: #f0f0f0;
+  
+    font-weight: bold;
+  
+    text-align: left;
+  
+  }
+  
+  
+  
+  .table td {
+  
+    vertical-align: middle;
+  
+  }
+  
+  
+  
+  .nav {
+  
+    list-style: none;
+  
+    padding: 0;
+  
+    display: flex;
+  
+  }
+  
+  
+  
+  .nav-item {
+  
+    margin-right: 10px;
+  
+  }
+  
+  
+  
+  
+  
+  .btn {
+  
+    cursor: pointer;
+  
+  }
+  
+  
+  
+  .btn-primary {
+  
+    background-color: #007bff;
+  
+    color: #fff;
+  
+    border: none;
+  
+    padding: 8px 12px;
+  
+    border-radius: 4px;
+  
+  }
+  
+  
+  
+  .btn-success {
+  
+    background-color: #28a745;
+  
+    color: #fff;
+  
+    border: none;
+  
+    padding: 8px 12px;
+  
+    border-radius: 4px;
+  
+  }
+  
+  
+  
+  .btn-danger {
+  
+    background-color: #dc3545;
+  
+    color: #fff;
+  
+    border: none;
+  
+    padding: 8px 12px;
+  
+    border-radius: 4px;
+  
+  }
+  
+  
+  
+  .btn:hover {
+  
+    opacity: 0.8;
+  
+  }

@@ -1,0 +1,70 @@
+
+.fa{
+  margin-left: 7px;
+}
+.fa-solid{
+  margin-left: 7px;
+}
+.navbar{
+
+  background-color: #002347;
+  
+  
+ }  
+ 
+ #logo-container{
+  
+   text-decoration: none;
+   font-size: medium;
+   color:rgb(247, 244, 244);
+   font-weight: 600;
+   margin-right: 40px;
+ }
+ #logo-container i{ 
+   margin-top: 20px; 
+ }
+ a{
+   color:white;
+   margin-right: 60px;
+ }
+ .nav-link:hover{
+   text-decoration-line: underline;
+ 
+ 
+ }
+ .navbar-nav .nav-link {
+   color: white;
+   font-weight: 600;
+ }
+ 
+ .nav-link {
+ color: white;
+ font-weight: 600;
+ }
+ 
+ @media (max-width: 767px) {
+ .navbar {
+     position: absolute; 
+    
+     top: 0;
+     left: 0;
+     right: 0;
+     background-color: #002347;
+     z-index: 1000; 
+ }
+ 
+ .navbar-collapse {
+     position: static;
+     background-color: #002347;
+     color: white;
+    
+    
+ }
+ }
+
+ 
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!-- <section id="Rooms">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="header-text">
+
+                <h2 id="heading">Meetings Rooms</h2>
+
+            </div>
+
+        </div>
+
+        <form class="row">
+
+            <div class="card" *ngFor="let item of displayAllRoom" >
+                <div class="card-image">
+                  <img  src="{{item.image}}" alt="">
+                </div>
+                <div class="card-text">
+                    <h2>{{item.roomName}} </h2>
+                  <h2 >{{item.capacity}}</h2>
+                  <p class="card-body" *ngIf="item.isAVRoom == true"> AV Room Supported</p>
+                  <p class="card-body" *ngIf="item.isAVRoom != true"> AV Not Supported</p>
+                </div>
+                <button class="card-price" routerLink="booking/{{item.roomId}}">Book Room</button>
+              </div>
+
+        </form>
+
+    </div>
+</section> -->
+<section id="Rooms">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="header-text">
+
+                <h2 id="heading">Meetings Rooms</h2>
+
+            </div>
+
+        </div>
+
+
+        <form class="row">
+        <div class="col-lg-6 card " *ngFor="let item of displayAllRoom" style="width: 20rem;">
+            <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{item.roomName}}</h5>
+              <p class="card-body" *ngIf="item.isAVRoom == true"> AV Room Supported</p>
+              <p class="card-body" *ngIf="item.isAVRoom != true"> AV Not Supported</p>
+              <button routerLink="booking/{{item.roomId}}">Book Room</button>
+            </div>
+          </div>
+       </form>
+
+
+
+       
+    </div>
+</section>

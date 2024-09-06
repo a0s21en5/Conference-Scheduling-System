@@ -1,0 +1,80 @@
+<div class="outer-container">
+  <div class="container">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6 text-center align-self-center">
+              <img [src]="room.image" alt="">
+            </div>
+            <div class="col-md-6 info">
+              <div class="row title">
+                <div class="col">
+                  <h2>{{room.roomName}}</h2>
+                </div>
+                <div class="col text-right">
+                  <a href="#"><i class="fa fa-heart-o"></i></a>
+                </div>
+              </div>
+              <p ngIfElse="room.isAVRoom">AV Supported</p> <span class="fa fa-star checked"></span>
+              <p *ngIf !="room.isAVRoom">AV Not Supported</p> <span class="fa fa-star checked"></span>
+              <p>Capacity:{{room.capacity}}</p> <span class="fa fa-star checked"></span>
+              <div class="row price">
+                <!-- Add content for the price section if available -->
+              </div>
+            </div>
+          </div>
+          <div>
+            <mat-form-field class="example-full-width">
+              <mat-label class="lableclr">Choose a date</mat-label>
+              <input matInput [matDatepicker]="picker" [min]="minDate" (dateChange)="onDateSelected($event)">
+              <mat-datepicker-toggle matIconSuffix [for]="picker">
+                <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+              </mat-datepicker-toggle>
+              <mat-datepicker touchUi #picker class="custom-datepicker-popup"></mat-datepicker>
+            </mat-form-field>
+
+            <div class="container">
+             
+              <div class="timeslot-container">
+                <button class="timeslot-button" *ngFor="let timeslot of timeslots" [ngClass]="{ 'selected': timeslot.isSelected }"
+                  (click)="toggleTimeslot(timeslot)">
+                  {{ timeslot.label }}
+                </button>
+              </div> 
+              <h2 id="heading-customtime">Select Custom Time From <i class="fa-solid fa-arrow-down fa-lg"></i> Down</h2>
+              <div class="toggle-example">
+                <!-- <h2 id="heading" style="margin-right: 50px;">custom time</h2> -->
+                <form class="startTime-form" >
+                
+                  <input id="startTime-id" [ngxTimepicker]="toggleStartTimepicker"  [disableClick]="true" placeholder="Start Time" readonly>
+                    
+                  <ngx-material-timepicker-toggle [for]="toggleStartTimepicker"></ngx-material-timepicker-toggle>
+                
+                  <ngx-material-timepicker  #toggleStartTimepicker (timeChanged)="onStartTimeSelected($event)"></ngx-material-timepicker>
+                </form >
+                <form class="endTime-form" >
+                
+                  <input id="endTime-id" [ngxTimepicker]="toggleEndTimepicker"  [disableClick]="true" placeholder="End Time" readonly>
+                    
+                  <ngx-material-timepicker-toggle [for]="toggleEndTimepicker"></ngx-material-timepicker-toggle>
+                
+                  <ngx-material-timepicker  #toggleEndTimepicker (timeChanged)="onEndTimeSelected($event)"></ngx-material-timepicker>
+                </form >
+              </div>
+              <!-- <div class="toggle-example">
+                
+                    
+              </div> -->
+              <!-- <div>
+                    
+                <p>Selected Time: {{ selectedTime1 }}</p>    
+              </div> -->             
+            </div>
+
+            <div class="next-button-container">
+              <button type="button"  id="id-request" (click)="onNextButtonClicked()" class="btn btn-primary">Request</button>
+              <button type="button" id="id-cancel" (click)="Cancel()" class="btn btn-primary">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

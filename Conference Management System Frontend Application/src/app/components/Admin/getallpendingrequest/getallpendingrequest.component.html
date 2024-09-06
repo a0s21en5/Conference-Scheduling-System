@@ -1,0 +1,128 @@
+<app-admindashboard></app-admindashboard>
+<!-- <div class="div-table">
+    <table class="table table-primary table-hover">
+      <thead>
+        <tr>
+          <th scope="col">RequestId</th>
+          <th scope="col">UserId</th>
+          <th scope="col">RoomId</th>
+          <th scope="col">Date</th>
+          <th scope="col">TimeSlot</th>
+          <th scope="col">Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of allPendingRequest">
+          <td>{{item.requestId}}</td>
+          <td>{{item.userId}}</td>
+          <td>{{item.roomId}}</td>
+          <td>{{item.date}}</td>
+          <td>{{item.timeSlot}}</td>
+          <td>{{item.status}}</td>
+
+          <td>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+             
+              <button type="button" class="btn btn-success" (click)="ApproveRequest(item.requestId)">Approve</button>
+            </li> -->
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                Update Request
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">Approve</button></li>
+                <li><button class="dropdown-item" type="button">Reject</button></li>
+                
+              </ul>
+            </div> -->
+            <!-- [routerLink]="" -->
+            <!-- <li class="nav-item" [routerLinkActive]="['link-active']">
+             
+              <button type="button" class="btn btn-danger" (click)="RejectRequest(item.requestId)" >Reject</button>
+            </li> -->
+            <!-- [routerLink]="" -->
+          <!-- </td>
+  
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+  <div class="div-table">
+
+    <table class="table  table-hover">
+  
+      <thead>
+  
+        <tr>
+  
+          <th scope="col">RequestId</th>
+  
+          <th scope="col">UserId</th>
+  
+          <th scope="col">RoomId</th>
+  
+          <th scope="col">Date</th>
+  
+          <th scope="col">TimeSlot</th>
+  
+          <th scope="col">Status</th>
+  
+          <th scope="col">Approve/Reject Request</th>
+  
+         
+  
+        </tr>
+  
+      </thead>
+  
+      <tbody>
+  
+        <tr *ngFor="let item of allPendingRequest">
+  
+          <td>{{item.requestId}}</td>
+  
+          <td>{{item.userId}}</td>
+  
+          <td>{{item.roomId}}</td>
+  
+          <td>{{item.date}}</td>
+  
+          <td>{{item.timeSlot}}</td>
+  
+          <td>{{item.status}}</td>
+  
+          <td>
+            <!-- <form class="d-flex">
+              <input type="text" class="search__input" id="date" name="date" placeholder="Enter Client Connection Id"  [(ngModel)]="clientId" required="">
+              
+            </form> -->
+              
+            <!-- <button type="button" class="btn btn-success" (click)="ApproveRequest(item.requestId)" >
+  
+              Approve
+
+            </button> -->
+            <button type="button" class="btn btn-success" [routerLink]="['/approverejectstatus',item.requestId]">Approve/Reject</button>
+
+          
+          </td>
+  
+          <!-- <td>
+  
+              <button type="button" class="btn btn-danger" (click)="RejectRequest(item.requestId)">
+  
+                  Reject
+  
+                </button>
+                <button type="button" class="btn btn-success" [routerLink]="['/approverejectstatus',item.requestId]">conform</button>
+          </td> -->
+  
+           
+        </tr>
+  
+      </tbody>
+  
+    </table>
+  
+  </div>

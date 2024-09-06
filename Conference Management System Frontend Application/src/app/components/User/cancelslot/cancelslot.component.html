@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="content-box">
+   
+      <table class="table table-active table-hover">
+        <!-- Table headers -->
+        <tr class="table-head">
+          <th>Booking ID</th>
+          <th>Request ID</th>
+          <th>User ID</th>
+          <th>Room ID</th>
+          <th>Date</th>
+          <th>Time Slot</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+  
+        <!-- Table rows -->
+        <tr *ngFor="let room of rooms">
+          <td>{{ room.bookingId }}</td>
+          <td>{{ room.requestId }}</td>
+          <td>{{ room.userId }}</td>
+          <td>{{ room.roomId }}</td>
+          <td>{{ room.date }}</td>
+          <td>{{ room.timeSlot }}</td>
+          <td >{{ room.status }}</td>
+  
+  <!-- 
+          <td><button type="button" [routerLink]="['/cancle',room.bookingId,room.status]"
+              class="btn btn-danger">Cancle</button></td> -->
+              <td>
+                <button
+                  type="button"
+                  (click)="CancelRoom(room.bookingId!)"
+                  class="btn btn-danger"
+                  [disabled]="room.status === 'Cancel'"
+                >
+                  Cancel Booking
+                </button>
+              </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Data not found message -->
+    <div *ngIf="rooms.length === 0" class="data-not-found-message">
+      Data not found.
+    </div>
+

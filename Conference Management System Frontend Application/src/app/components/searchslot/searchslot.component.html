@@ -1,0 +1,54 @@
+
+    <div class="container-fluid">
+      <div class="note-class">
+        <h2>Note: here you can search request by only date <br>or by date and roomId by default it gives by current date </h2>
+        
+    
+      </div>
+      <form class="class-form">
+        <input type="number" min="1" class="search__input" id="number" name="number" placeholder=" Enter Room Id"   [(ngModel)]="roomId" required="">
+        <input type="text" class="search__input" id="date" name="date" placeholder="Enter Date(YY-MM-DD)"  [(ngModel)]="date" required="">
+        <button type="button" class="btn btn-success" id="search-btn" (click)="searchData()">Search</button>
+      </form>
+    </div>
+<!-- <form >
+    <input type="number" min="1" class="search__input" id="number" name="number" placeholder="number"   [(ngModel)]="roomId" required="">
+                
+                    
+    <input type="text" class="search__input" id="date" name="date" placeholder="date"  [(ngModel)]="date" required="">
+    <button (click)="searchData()">Search</button>
+</form> -->
+<div class="content-box">
+   
+    <table class="table table-active table-hover">
+      <!-- Table headers -->
+      <tr class="table-head">
+        <th>Booking ID</th>
+        <th>Request ID</th>
+        <th>User ID</th>
+        <th>Room ID</th>
+        <th>Date</th>
+        <th>Time Slot</th>
+        <th>Status</th>
+        
+      </tr>
+
+      <!-- Table rows -->
+      <tr *ngFor="let room of bookings">
+        <td>{{ room.bookingId }}</td>
+        <td>{{ room.requestId }}</td>
+        <td>{{ room.userId }}</td>
+        <td>{{ room.roomId }}</td>
+        <td>{{ room.date }}</td>
+        <td>{{ room.timeSlot }}</td>
+        <td >{{ room.status }}</td>
+<!-- 
+        <td><button type="button" [routerLink]="['/cancle',room.bookingId,room.status]"
+            class="btn btn-danger">Cancle</button></td> -->
+      </tr>
+    </table>
+  </div>
+  <!-- Data not found message -->
+  <div *ngIf="(bookings.length) ===0 " class="data-not-found-message">
+    Request not found.
+  </div>

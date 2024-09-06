@@ -1,0 +1,30 @@
+<div class="main-div">
+    <div class="card">
+        <h5 class="card-header">Approve Request Here </h5>
+        <div class="card-body">
+            <form >
+                <input type="text" class="login__input" id="name" name="txt" placeholder="Enter connection Id for user notification"   [(ngModel)]="connectionId" >
+                <div class="status-class">
+                    <!-- <i class="fa-solid fa-caret-down"></i>
+                    <label>Language</label> -->
+                    <select class="form-control"
+                            name="status"
+                            [(ngModel)]="selectedStatus" >
+                            <i class="fa-solid fa-caret-down"></i>
+                        <option selected disabled [value]="undefined" >Please select a Status</option>
+                        <option *ngFor="let item of Status"
+                                [value]="item">{{item}}
+                        </option>
+                    </select>
+                </div>
+                         
+                
+               
+                
+            </form>
+            <button class="btn btn-primary" id="conform" type="submit" (click)="value()">Conform</button>
+         
+        </div>
+      </div>
+</div>
+  

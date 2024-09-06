@@ -1,0 +1,41 @@
+#name{
+    
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 5px;
+   display: inline;
+   width: 300px;
+   border-radius: 5px;
+}
+.card{
+text-align: center;
+margin-left: 500px;
+margin-right: 500px;
+margin-top: 200px;
+}
+.main-div{
+    background: linear-gradient(90deg, #2980b9, #2c3e50);
+    min-height: 100vh;
+    position: fixed;
+    min-width: 100%;
+}
+#dropdownMenu2{
+    border-radius: 5px;
+    border-color: black;
+    margin-top: 5px;
+    width: 300px;
+}
+.selected-div{
+    margin-top: 5px;
+}
+.select-class{
+    width: 300px;
+}
+.status-class{
+    margin-top: 8px;
+    margin-left: 70px;
+    margin-right: 75px;
+}
+#conform{
+    margin-top: 10px;
+}

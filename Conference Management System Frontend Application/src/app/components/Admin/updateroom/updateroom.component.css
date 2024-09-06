@@ -1,0 +1,328 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+
+    "Lucida Sans", Arial, sans-serif;
+
+}
+
+
+
+label {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-weight: bold;
+
+  color: #555;
+
+}
+
+input[type="text"],
+
+
+
+input[type="number"] {
+
+  width: 100%;
+
+  padding: 8px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+}
+
+input[type="checkbox"] {
+
+  margin-right: 15px;
+
+}
+
+button[type="submit"] {
+
+  width: 100%;
+
+  padding: 10px;
+
+  background: linear-gradient(to right, #36a5b1, #4ca1af);
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: background-color 0.3s ease;
+
+
+
+}
+
+button[type="submit"]:hover {
+
+  background-color: #121213;
+
+}
+
+
+
+a {
+
+  color: #f8f9fa;
+
+  text-decoration: none;
+
+
+
+}
+
+a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+
+section {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh;
+
+  width: 100%;
+
+  background: #e0f1f5;
+
+  /* background: linear-gradient(to right, #36a5b1, #4ca1af); */
+
+}
+
+
+
+.content {
+
+  display: flex;
+
+  flex-direction: row;
+
+  width: 750px;
+
+  height: 550px;
+
+  border-radius: 10px;
+
+
+
+  background: #fff;
+
+}
+
+
+
+.left {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 250px;
+
+  border-top-left-radius: 10px;
+
+  border-bottom-left-radius: 10px;
+
+
+
+  background: url("https://images.unsplash.com/photo-1581887300455-5eb259f6eac0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fENPTkZFUkVOQ0UlMjBST09NfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+}
+
+
+
+.left img {
+
+  width: 100px;
+
+}
+
+
+
+.left h1 {
+
+  margin-top: 10px;
+
+  font-size: 3em;
+
+  font-weight: 100;
+
+  font-family: "Bebas Neue", sans-serif;
+
+  color: #fff;
+
+}
+
+
+
+.right {
+
+  margin: 20px auto;
+
+  padding: 10px;
+
+}
+
+
+
+.inputbox {
+
+  margin: 8px 0px;
+
+  width: 300px;
+
+  height: fit-content;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiveness:Start */
+
+@media screen and (max-width: 780px) {
+
+  .content {
+
+    flex-direction: column;
+
+    width: 400px;
+
+    margin: 20px auto;
+
+  }
+
+  .left {
+
+    height: 250px;
+
+    width: 100%;
+
+    border-radius: 0px;
+
+    border-top-left-radius: 10px;
+
+    border-top-right-radius: 10px;
+
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .content {
+
+    width: 100%;
+
+    margin: 0px;
+
+    border-radius: 0px;
+
+  }
+
+  .left {
+
+    width: 100%;
+
+    border-radius: 0px;
+
+  }
+
+}
+.btn{
+  margin-top: 10px;
+}
+/* Responsiveness:End */
+/* .container {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+  }
+
+ 
+
+  .room-form {
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    background-color: #fff;
+
+  }
+
+ 
+
+  .form-group {
+
+    margin-bottom: 20px;
+
+  }
+
+ 
+
+  .form-check-label {
+
+    margin-left: 5px;
+
+  }
+
+ 
+
+  .btn-primary {
+
+    margin-top: 10px;
+
+  } */

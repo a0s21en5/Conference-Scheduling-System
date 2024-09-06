@@ -1,0 +1,148 @@
+<app-admindashboard></app-admindashboard>
+<!-- <li class="nav-item" [routerLinkActive]="['link-active']">
+   
+    <button type="button" class="btn btn-primary" [routerLink]="['/register']">Add User</button>
+  <li class="nav-item" [routerLinkActive]="['link-active']">
+    <button type="button" class="btn btn-primary" [routerLink]="['/userdashboard']">Go To UserDashboard</button>
+  </li>
+  <div class="div-table">
+    <table class="table table-primary table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+         
+          <th scope="col">Designation</th>
+          <th scope="col">Role</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of users">
+          <td>{{item.user_Id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.designation}}</td>
+          <td>{{item.isAdmin}}</td>
+          <td>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              
+              <button type="button" class="btn btn-success" [routerLink]="['/edit',item.user_Id]">Edit</button>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              
+              <button type="button" class="btn btn-danger" [routerLink]="['/delete',item.user_Id]">Delete</button>
+            </li>
+          </td>
+  
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+  <!--<a class="nav-link text-dark" [routerLink]="['/dashboard']">All User</a>-->
+  <div class="custom_container">
+
+    <nav>
+  
+      <ul class="nav">
+  
+       
+  
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+  
+          <button type="button" class="btn btn-primary" [routerLink]="['/userdashboard']">
+  
+            Go To User Dashboard
+  
+          </button>
+  
+        </li>
+  
+      </ul>
+  
+    </nav>
+  
+  
+  
+    <div class="div-table mt-5">
+  
+      <div class="card">
+  
+        <div class="card-title">User Information</div>
+  
+        <table class="table table-hover">
+  
+          <thead>
+  
+            <tr>
+  
+              <th scope="col">Id</th>
+  
+              <th scope="col">Name</th>
+  
+              <th scope="col">Email</th>
+  
+              <th scope="col">Designation</th>
+  
+              <th scope="col">Role</th>
+  
+              <th></th>
+  
+            </tr>
+  
+          </thead>
+  
+          <tbody>
+  
+            <tr *ngFor="let item of JsonUserParse">
+  
+              <td>{{ item.User_Id }}</td>
+  
+              <td>{{ item.Name }}</td>
+  
+              <td>{{ item.Email }}</td>
+  
+              <td>{{ item.Designation }}</td>
+  
+              <td>{{ item.IsAdmin }}</td>
+  
+              <td>
+  
+                <ul class="nav">
+  
+                  <li class="nav-item" [routerLinkActive]="['link-active']">
+  
+                    <button type="button" class="btn btn-success" [routerLink]="['/edit', item.User_Id]">
+  
+                      Edit
+  
+                    </button>
+  
+                  </li>
+  
+                  <li class="nav-item" [routerLinkActive]="['link-active']">
+  
+                    <button type="button" class="btn btn-danger" [routerLink]="['/delete', item.User_Id]">
+  
+                      Delete
+  
+                    </button>
+  
+                  </li>
+  
+                </ul>
+  
+              </td>
+  
+            </tr>
+  
+          </tbody>
+  
+        </table>
+  
+      </div>
+  
+    </div>
+  
+  </div>

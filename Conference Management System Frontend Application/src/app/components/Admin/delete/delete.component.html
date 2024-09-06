@@ -1,0 +1,24 @@
+<div class="body">
+    <div class="container">
+        <h2> Are you sure you want to Delete </h2>
+    
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="user.name" readonly>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="user.email" readonly>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" [(ngModel)]="user.password" readonly>
+    
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" name="designation" [(ngModel)]="user.designation" readonly>
+    
+            <button type="submit" class="btn btn-danger" (click)="DeleteUser()">Delete</button>
+            <button type="submit" (click)="Cancel()" class="btn btn-info">Cancel</button>
+    
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,91 @@
+    /* Set the linear gradient background for the wrapper */
+    .page-wrapper {
+        background: linear-gradient(90deg, #2980b9, #2c3e50);
+        color: #2c3e50; /* Set text color to white for better visibility */
+        min-height: 100vh; /* Ensure the gradient covers the entire viewport */
+        margin: 0;
+        padding: 0;
+      }
+      h2
+      {
+        color: black;
+        
+      }
+      .notification-container {
+        padding: 20px;
+      }
+  
+      .notification-message {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+  
+      .notification-message p {
+        margin: 0;
+      }
+  
+      .notification-message strong {
+        margin-right: 5px;
+        color: #333;
+      }
+  
+      .notification-message .card-text {
+        font-size: 14px;
+      }
+  
+      .notification-message .card-text strong {
+        color: #428bca;
+      }
+  
+      .notification-message .card-text::after {
+        content: "|";
+        margin: 0 5px;
+        color: #999;
+      }
+  
+      .notification-message .card-text span:last-child::after {
+        content: "";
+      }
+  
+      /* Status Colors and Alignment */
+      .notification-message .status-pending {
+        background-color: #f39c12; /* Yellow */
+      }
+  
+      .notification-message .status-approved {
+        background-color: #2ecc71; /* Green */
+      }
+  
+      .notification-message .status-cancel {
+        background-color: #e74c3c; /* Red */
+      }
+  
+      /* Set text color to white for status elements */
+      .notification-message .status-pending,
+      .notification-message .status-approved,
+      .notification-message .status-cancel {
+        color: #fff;
+        padding: 3px 6px;
+        border-radius: 3px;
+        float: right;
+      }
+      .cancel-fa{
+        display: flex;
+        color: white;
+        text-decoration: none;
+        justify-content: end; 
+        margin-top: 15px;
+      }
+      .cancel-fa:hover{
+        display: flex;
+        justify-content: end;
+
+      }
+      .notification-cancel{
+        display: flex;
+        justify-content: space-between;
+      }

@@ -1,0 +1,260 @@
+
+.container {
+
+ 
+
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+   
+  
+  }
+  
+   
+  
+  .card {
+  
+   
+  
+    width: 18rem;
+  
+   
+  
+    border-radius:5px;
+  
+   
+  
+    overflow:hidden;
+  
+   
+  
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+  
+   
+  
+    transition:transform 0.3s;
+  
+   
+  
+    background-color:#fff;
+  
+   
+  
+    margin:10px;
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .card:hover {
+  
+   
+  
+    transform: translateY(-5px);
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .card-img-top {
+  
+   
+  
+    height: 200px;
+  
+   
+  
+    -o-object-fit: cover;
+  
+   
+  
+       object-fit: cover;
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .card-body {
+  
+   
+  
+    padding: 15px;
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .card-title {
+  
+   
+  
+    font-size: 20px;
+  
+   
+  
+    margin-bottom: 10px;
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .card-text {
+  
+   
+  
+    font-size: 14px;
+  
+   
+  
+    color: #666;
+  
+   
+  
+    margin-bottom: 15px;
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .availability {
+  
+   
+  
+    font-size: 16px;
+  
+   
+  
+    font-weight: bold;
+  
+   
+  
+    margin-bottom: 5px;
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .available {
+  
+   
+  
+    color: hsl(60, 100%, 18%);
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .unavailable {
+  
+   
+  
+    color: rgb(247, 240, 240);
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .available:hover {
+  
+   
+  
+    color: darkgreen;
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .unavailable:hover {
+  
+   
+  
+    color: darkred;
+  
+   
+  
+  }
+  
+   
+  
+   
+  
+   
+  
+  .hh {
+  
+   
+  
+    /* background-image: url("https://www.techguide.com.au/wp-content/uploads/2021/09/christina-wocintechchat-com-Q80LYxv_Tbs-unsplash.jpeg"); */
+    background: #e0f1f5;
+    background-size: cover;
+  
+    background-position: center center;
+  
+    min-height: 100vh;
+  
+
+  
+  }/*# sourceMappingURL=roomcard.component.css.map */

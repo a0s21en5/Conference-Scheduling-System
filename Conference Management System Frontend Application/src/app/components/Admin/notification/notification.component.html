@@ -1,0 +1,90 @@
+<!-- <div class="toast-notification-container">
+    <h1>Admin Notifications</h1>
+    <ul>
+      <li *ngFor="let item of msgarr">
+        <ul>
+          <div class="toast-notification"> {{item}}</div>
+        </ul>
+      </li>
+    </ul>
+  </div> -->
+  <!-- <div>
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" [(ngModel)]="userId">
+    <br>
+    <label for="message">Message:</label>
+    <input type="text" id="message" [(ngModel)]="message">
+    <br>
+    <button (click)="sendNotification()">Send Notification</button>
+  </div> -->
+
+<!-- <div>
+  <h1>New Notifications</h1>
+
+  <ul>
+
+    <li *ngFor="let item of msgarr">
+
+      <div class="toast-notification">{{ item}}</div>
+
+    </li>
+
+  </ul>
+
+  <h2>Old Notifications</h2>
+
+  <ul>
+
+    <li *ngFor="let item of notification">
+
+      <div class="toast-notification">UserId:{{ item.userId }} &nbsp;&nbsp; UserName:{{ item.userName }} &nbsp;&nbsp;Email:{{ item.email }}&nbsp;&nbsp;RoomName:{{ item.roomName }} &nbsp;&nbsp;Date:{{ item.date }}&nbsp;&nbsp; Time Slot:{{ item.timeSlot }} &nbsp;&nbsp;&nbsp;&nbsp; {{ item.notificationData }}</div>
+
+     
+
+    </li>
+
+  </ul>
+
+</div> -->
+
+<div class="page-wrapper">
+  <div class="notification-container">
+    <div class="notification-cancel">
+      <h2>New Notifications</h2>
+      <a class="cancel-fa" href="adminhomesection"><i class="fa-solid fa-xmark fa-2xl"></i></a>
+    </div>
+    <ng-container > 
+
+   
+      <div *ngFor="let item of msgarr" class="notification-message card mb-3">
+        <div class="card-body">
+          <p class="card-text" id="newnotification-id">
+            {{ item}} 
+          </p>
+        </div>
+      </div>
+    </ng-container>
+  <h2>Old Notifications</h2>
+    <ng-container > 
+
+   
+      <div *ngFor="let item of notification" class="notification-message card mb-3">
+        <div class="card-body">
+          <p class="card-text">
+            <strong>User ID:</strong> {{ item.userId }} |
+            <strong>User Name:</strong> {{ item.userName }} |
+            <strong>Email:</strong> {{ item.email }} |
+            <strong>Room Name:</strong> {{ item.roomName }} |
+            <strong>Date:</strong> {{ item.date }} |
+            <strong>Time Slot:</strong> {{ item.timeSlot }} |
+            <strong>Request Time:</strong> {{ item.notificationData }}
+            <!-- <span [ngClass]="{'status-pending': item.status === 'Pending', 'status-approved': item.status === 'Approved', 'status-cancel': item.status === 'Cancel'}">{{ item.status }}</span> -->
+          </p>
+        </div>
+      </div>
+    </ng-container>
+    <!-- <ng-template #noNotifications>
+      <p>No notifications found.</p>
+    </ng-template> -->
+  </div>
+</div>

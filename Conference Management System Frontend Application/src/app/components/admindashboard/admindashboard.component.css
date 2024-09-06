@@ -1,0 +1,37 @@
+.navbar {
+  background: #044f5c;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-item a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-item a:hover {
+    color: #5189c2; /* Lighter shade of white for hover effect */
+    transform: scale(1.05);
+  }
+  
+  .nav-item a:hover {
+    background-color: #f8f9fa; /* Lighter background color on hover */
+    color: #070707; /* Change text color on hover */
+    border-radius: 4px; /* Add rounded corners on hover */
+    transform: scale(1.05);
+  }/*# sourceMappingURL=navbar.component.css.map */
+  .nav-link #logout{
+    justify-content: right;
+    /* text-align: right; */
+
+  }
+  #currenttime{
+    color: white;
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+  
